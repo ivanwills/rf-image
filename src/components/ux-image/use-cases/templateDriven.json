@@ -1,0 +1,6 @@
+{
+	"title": "Use case via template",
+	"template": "ux-image-templateDriven",
+	"file": "src/components/ux-image/use-cases/templateDriven.hbs",
+	"data": {}
+}
