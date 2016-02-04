@@ -1,3 +1,18 @@
-<div class="ux-image">
-	<h2>{{todo}}</h2>
-</div>
+{{#if visible}}
+	<img src="{{src}}"
+		alt="{{alt || src}}"
+		style="
+			{{#if height}}height: {{height}}px{{/if}}
+			{{#if width}}width: {{width}}px{{/if}}
+		"
+	/>
+{{else}}
+	<span class="ux-image"
+		style="
+			{{#if height}}height: {{height}}px{{/if}}
+			{{#if width}}width: {{width}}px{{/if}}
+		"
+		>
+		{{alt}}
+	</span>
+{{/if}}
